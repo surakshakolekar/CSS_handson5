@@ -1,0 +1,154 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+   background-color: yellow;
+   width: 100%;
+   height: 1000px; 
+} 
+
+h1{
+   text-align: center;
+}
+
+.box{
+   width: 500px;
+   height: 100px;   
+   margin: auto;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 30px;   
+   margin-bottom: 40px;
+   padding-left: 60px;
+ 
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background-color: red;  
+  border: 2px solid black;
+  animation-name: an1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes an1{
+   0%{
+      transform: skewX(-30deg);
+   }
+   100%{
+      transform: skewX(30deg);
+   }
+}
+
+.box2{
+   width: 100px;
+   height: 100px;  
+   background-color: plum;  
+   border: 2px solid lightskyblue;
+   animation-name: an2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+}
+
+@keyframes an2{
+    50%{
+       transform: skewY(30deg);
+    }
+    100%{
+       transform: skewY(-30deg);
+    }
+}
+.box3{
+ width: 100px;
+  height: 100px;  
+ background-color: lightgreen;  
+ border: 2px solid bisque;
+ animation-name: an3;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease;
+}
+
+@keyframes an3{
+    0%{
+       transform: rotate(90deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+}
+
+.boxs1{
+  width: 100px;
+  height: 100px;  
+ background-color: brown;  
+ border: 2px solid orange;
+ animation-name: an4;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease;
+}
+
+@keyframes an4{
+  0%{
+     transform: scaleY(0.5);
+  }
+  100%{
+     transform: scaleY(1.1);
+  
+  }
+}
+
+.boxs2{
+  width: 100px;
+  height: 100px;  
+ background-color: grey;  
+ border: 2px solid blue;
+ animation-name: an5;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease;
+}
+
+@keyframes an5{
+  0%{
+     transform: scaleX(0.5);
+  }
+  100%{
+     transform: scaleX(1.1);
+  
+  }
+}
+
+.boxs3{
+  width: 100px;
+  height: 100px;  
+ background-color: mediumseagreen;  
+ border: 2px solid black;
+ animation-name: an6;
+ animation-duration: 3s;
+ animation-direction: alternate-reverse;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease;
+}
+
+@keyframes an6{
+  0%{
+     transform: rotate();
+  }
+  100%{
+     transform: rotate(95deg);
+  
+  }
+}
+
+a{
+  margin-left: 450px;
+  font-size: 40px;
+}
